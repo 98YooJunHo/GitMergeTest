@@ -46,4 +46,11 @@ namespace MergeTest
             Console.WriteLine($"{this.Centimeter}cm 는 {this.Inch}inch 입니다.");
         }
     }
+
+    private void _SetInch(float inchValue)
+    {
+        Centimeter = (int)(inchValue / ONE_INCH);
+    }
+    // {    2023 07 03          Add private _SetInch function / Gamma
+    // }     2023 07 03 Modified class position / Alpha
 }
