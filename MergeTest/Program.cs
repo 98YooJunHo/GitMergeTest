@@ -39,18 +39,18 @@ namespace MergeTest
             private set { Centimeter = (int)(value / ONE_INCH); }
         }
 
-        public Ruler(int cmValue) { Centimeter = cmValue; }
+        public Ruler(int cmValue) { _SetInch(cmValue); }
 
         public void Run()
         {
             Console.WriteLine($"{this.Centimeter}cm 는 {this.Inch}inch 입니다.");
         }
+        private void _SetInch(float inchValue)
+        {
+            Centimeter = (int)(inchValue / ONE_INCH);
+        }
     }
 
-    private void _SetInch(float inchValue)
-    {
-        Centimeter = (int)(inchValue / ONE_INCH);
-    }
     // {    2023 07 03          Add private _SetInch function / Gamma
     // }     2023 07 03 Modified class position / Alpha
 }
