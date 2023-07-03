@@ -36,13 +36,4 @@ namespace MergeTest
         // {    2023 07 03          Add private _SetInch function / Gamma
     }
     // }     2023 07 03 Modified class position / Alpha
-
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            Ruler ruler = new Ruler(10);
-            ruler.Run();
-        }
-    }
 }
